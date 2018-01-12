@@ -3,6 +3,34 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
+:root {
+    --cor-principal: #4B5FCA;
+    --cor-analoga-roxa: #4B5FCA;
+    --cor-analoga-azul-escuro: #5948E1;
+    --cor-analoga-azul-claro: #4888E1;
+    --cor-analoga-azul-mais-claro: #45A9D7;
+    --cor-mono-azul-escuro: #1C234A;
+    --cor-mono-azul-claro: #8E98D3;
+    --cor-mono-cinza-escuro: #32364A;
+    --cor-mono-azul: #384797;
+    --cor-triade-azul: #22307D;
+    --cor-triade-salmao: #D38063;
+    --cor-triade-verde-claro: #5A9729;
+    --cor-triade-verde-escuro: #4E7D28;
+    --cor-complementar-azul-escuro: #22307D;
+    --cor-complementar-azul-claro: #788DFF;
+    --cor-complementar-amarelo-escuro: #7D6415;
+    --cor-complementar-amarelo-claro: #CAAB4B;
+    --cor-composta-roxo: #8B45FD;
+    --cor-composta-cinza: #564D64;
+    --cor-composta-bege: #D1B682;
+    --cor-composta-laranja: #FDA945;
+    --cor-sombra1: #1C234A;
+    --cor-sombra2: #33418A;
+    --cor-sombra3: #4253B0;
+    --cor-sombra4: #5065D7;
+}
+
 html {
     height: 100%
 }
@@ -55,12 +83,12 @@ hr.dark {
 
 hr.dark:after {
     color: #2C3E50;
-    background-color: #CAAB4B;
+    background-color: #ffffff;
     border-radius: 100%;
 }
 
 section {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 section h2 {
@@ -105,11 +133,12 @@ section h2 {
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-family: 'Audiowide', cursive;
+    background: var(--cor-sombra1);
 }
 
 #mainNav .navbar-brand {
-    color: #FDA945;
-    text-shadow: 4px 4px 7px #1C234A
+    color: var(--cor-complementar-azul-claro);
+    /*text-shadow: 4px 4px 7px #1C234A*/
 }
 
 #mainNav .navbar-nav {
@@ -118,7 +147,8 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-    color: #D1B682;
+    color: var(--cor-mono-azul-escuro);
+    background: var(--cor-mono-azul-claro);
     font-family: 'Lato', sans-serif;
     font-weight: bolder;
     text-align: center;
@@ -126,13 +156,13 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: #FDA945;
-    text-shadow: 2px 2px 3px #33418A;
-    background: #33418A66;
+    color: var(--cor-composta-laranja);
+    text-shadow: 2px 2px 3px var(--cor-sombra2);
+    background: var(--cor-principal);
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-    color: #FDA945;
+    color: var(--pink);
     text-shadow: 2px 2px 3px #1C234A
 }
 
@@ -142,8 +172,10 @@ section h2 {
 }
 
 #mainNav .navbar-toggler {
-    font-size: 80%;
-    padding: 0.8rem;
+    color: var(--cor-mono-azul-escuro);
+    background: var(--cor-mono-azul-claro);
+    /*font-size: 80%;*/
+    padding: 0.5rem;
 }
 
 #mainNav .navbar-brand img {
@@ -151,8 +183,8 @@ section h2 {
     height: 45px;
     -webkit-transition: width .4s, height .4s;
     transition: width .3s, height .3s;
-    animation: rodar 2s infinite;
-    -webkit-animation: rodar 2s infinite;
+    animation: rodar 2.5s infinite;
+    -webkit-animation: rodar 2.5s infinite;
 }
 
 @media (min-width: 992px) {
@@ -181,13 +213,13 @@ section h2 {
     }
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-        color: #CAAB4B;
-        background: #45A9D7;
+        color: var(--cor-mono-azul-claro);
+        background: var(--cor-principal);
     }
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-        color: #CAAB4B;
-        background: #45A9D7;
+        color: var(--cor-mono-azul-claro);
+        background: var(--cor-principal);
     }
 
     #mainNav.navbar-shrink {
@@ -219,7 +251,7 @@ header.masthead h1, header.masthead h2 {
 header.masthead #titulo {
     font-family: 'Lato', sans-serif;
     /*line-height: 2rem;*/
-    margin-top: calc(100vh - (4 * 4.7rem));
+    margin-top: calc(100vh - (4 * 6rem));
     text-shadow: 2px 2px 2px #1a252f;
     /*background: #4B5FCACC;*/
     /*box-shadow: 0 0 2px 2px #32364A;*/
