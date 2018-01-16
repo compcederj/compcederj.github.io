@@ -183,8 +183,8 @@ section h2 {
     height: 45px;
     -webkit-transition: width .4s, height .4s;
     transition: width .3s, height .3s;
-    animation: rodar 2.5s infinite;
-    -webkit-animation: rodar 2.5s infinite;
+    animation: rodar 2.5s 5s 5;
+    -webkit-animation: rodar 2.5s 5s 5;
 }
 
 @media (min-width: 992px) {

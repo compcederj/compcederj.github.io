@@ -1,4 +1,5 @@
 .idea/
+Ementas-das-disciplinas-Computação-UFF.pdf
 node_modules
 ### Windows template
 # Windows thumbnail cache files
@@ -28,7 +29,6 @@ $RECYCLE.BIN/
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff:
-.idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
 
@@ -112,3 +112,5 @@ fabric.properties
 # Windows Installer files
 
 # Windows shortcuts
+browserconfig.xml
+manifest.json

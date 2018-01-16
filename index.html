@@ -29,11 +29,11 @@
     <link href="css/freelancer.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
 </head>
@@ -41,16 +41,16 @@
 <body id="page-top">
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg fixed-top box-sombreado fundo-principal" id="mainNav">
+<nav class="navbar navbar-expand-lg fixed-top box-sombreado" id="mainNav">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger " href="#page-top">
             <img class="img-fluid" src="img/logo-main-novo.png" alt="">
             Sala de Estudos
         </a>
-        <button class="navbar-toggler navbar-toggler-right fundo-sombra2 rounded" type="button" data-toggle="collapse"
+        <button class="navbar-toggler navbar-toggler-right rounded" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
-            <i class="fa fa-bars cor-composto-bege"></i>
+            <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
@@ -90,16 +90,17 @@
 <section class="disciplinas" id="disciplinas">
     <div class="container">
         <h2 class="text-center">Disciplinas</h2>
+        <hr class="dark">
         <div class="row">
             <div class="col-md-6">
 
                 <div id="disciplinasAtoI" role="tablist">
 
-                    <div class="card">  <!-- Álgebra Linear -->
+                    <div class="card" data-card="">  <!-- Álgebra Linear -->
                         <div class="card-header" role="tab" id="cabecalhoAL">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseAL" role="button" aria-expanded="true"
-                                   aria-controls="collapseAL">
+                                   aria-controls="collapseAL" class="card-disciplina">
                                     Álgebra Linear
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTWlY3bUNKMElxSGc">
@@ -224,7 +225,7 @@
                         <div class="card-header" role="tab" id="cabecalhoAS">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseAS" role="button" aria-expanded="true"
-                                   aria-controls="collapseAS">
+                                   aria-controls="collapseAS" class="card-disciplina">
                                     Análise de Sistemas
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTM1hvQ0xObS1aYzA">
@@ -351,7 +352,7 @@
                         <div class="card-header" role="tab" id="cabecalhoAPS">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseAPS" role="button" aria-expanded="true"
-                                   aria-controls="collapseAPS">
+                                   aria-controls="collapseAPS" class="card-disciplina">
                                     Arquitetura e Projeto de Sistemas
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTMmRDWTVaNktQVUk">
@@ -464,7 +465,7 @@
                         <div class="card-header" role="tab" id="cabecalhoBD">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseBD" role="button" aria-expanded="true"
-                                   aria-controls="collapseBD">
+                                   aria-controls="collapseBD" class="card-disciplina">
                                     Banco de dados
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/drive/u/1/folders/0B09LpkQ_E4zTSUlNTjZUQnB6QVE">
@@ -613,7 +614,7 @@
                         <div class="card-header" role="tab" id="cabecalhoCG">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseCG" role="button" aria-expanded="true"
-                                   aria-controls="collapseCG">
+                                   aria-controls="collapseCG" class="card-disciplina">
                                     Computação Gráfica
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTTFZMQnpqYWJfaDQ">
@@ -722,7 +723,7 @@
                         <div class="card-header" role="tab" id="cabecalhoCPW">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseCPW" role="button" aria-expanded="true"
-                                   aria-controls="collapseCPW">
+                                   aria-controls="collapseCPW" class="card-disciplina">
                                     Construção de Páginas Web
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTMmlaemZQSHkyT1E">
@@ -836,7 +837,7 @@
                         <div class="card-header" role="tab" id="cabecalhoDP">
                             <h5 class="mb-0">
                                 <a target="_blank" data-toggle="collapse" href="#collapseDP" role="button" aria-expanded="true"
-                                   aria-controls="collapseDP">
+                                   aria-controls="collapseDP" class="card-disciplina">
                                     Desafios de Programação
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTaER2STBIMWpaV1E">
@@ -863,7 +864,7 @@
                         <div class="card-header" role="tab" id="cabecalhoEE">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseEE" role="button" aria-expanded="true"
-                                   aria-controls="collapseEE">
+                                   aria-controls="collapseEE" class="card-disciplina">
                                     Empreendedorismo e Ética
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTcGhIVFNqamRCWUk">
@@ -950,7 +951,7 @@
                         <div class="card-header" role="tab" id="cabecalhoES">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseES" role="button" aria-expanded="true"
-                                   aria-controls="collapseES">
+                                   aria-controls="collapseES" class="card-disciplina">
                                     Engenharia de Software
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTNUd1cC1pNU13aVE">
@@ -1057,7 +1058,7 @@
                         <div class="card-header" role="tab" id="cabecalhoED">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseED" role="button" aria-expanded="true"
-                                   aria-controls="collapseED">
+                                   aria-controls="collapseED" class="card-disciplina">
                                     Estrutura de Dados
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTcTB2X281ZFZlNHM">
@@ -1232,7 +1233,7 @@
                         <div class="card-header" role="tab" id="cabecalhoFisca">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseFisica" role="button" aria-expanded="true"
-                                   aria-controls="collapseFisica">
+                                   aria-controls="collapseFisica" class="card-disciplina">
                                     Física para Computação
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTUm5xUDVOWXF0Rjg">
@@ -1372,7 +1373,7 @@
                         <div class="card-header" role="tab" id="cabecalhoFAC">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseFAC" role="button" aria-expanded="true"
-                                   aria-controls="collapseFAC">
+                                   aria-controls="collapseFAC" class="card-disciplina">
                                     Fundamento de Algoritmos para Computação
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTN1N3UnoxYWQ2eE0">
@@ -1500,7 +1501,7 @@
                         <div class="card-header" role="tab" id="cabecalhoFP">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseFP" role="button" aria-expanded="true"
-                                   aria-controls="collapseFP">
+                                   aria-controls="collapseFP" class="card-disciplina">
                                     Fundamentos de Programação
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTaFM2OXdGY0ZERVU">
@@ -1573,6 +1574,71 @@
                                         12
                                     </a>
                                 </div>
+								<h4>Dicas</h4>
+								<div class="dicas">
+								
+								
+								
+								
+									<p>
+                                        As aulas gravadas são boas e atuais, mais não se acomode com as aulas da plataforma,
+										busque conteúdos externos também. Faça os exercícios das aulas com o auxílio o Uri Online Judge, 
+										não deixe as ADs para a última hora, pois a avaliação é muito extensa,cada ponto é primordial
+										para sua aprovação.A disciplina é considerada uma das mais dificies do curso.
+										É importante que o aluno treine a escrita dos códigos no papel, todas as 
+										provas serão discursivas no papel, ou seja, sem o auxílio da IDE.
+										Livro como "Python Para Desenvolvedores", "Use A Cabeça!-Python" e "Introdução a Python Modulo A"
+										podem ser uma ótima sugestão para o entendimento da linguagem.
+										
+
+                                    </p>
+                                    <p>
+                                        <a target="_blank" href="https://www.youtube.com/watch?v=lJjR906426o&list=PLX65ruEX8lOTS_IsLp-STkZLWV9glggDG" class="btn fundo-principal mt-3 mb-0 cor-composto-laranja btn-block">
+                                            Ignorância Zero
+                                        </a>
+                                        Com toda certeza, nesse playlist você encontra o melhor conteúdo de Python da web, o material é
+										super bem elaborado com a auxilio do livro "Introdução a Python Modulo A", que é recomendado para iniciantes.
+										A playlist tem o total de 153 vídeo aulas, mais da aula 1 até a 58 fica o conteúdo completo para o estudo da disciplina do curso.
+
+                                    </p>
+                                    <p>
+                                        <a target="_blank" href="https://www.youtube.com/watch?v=j94IGZmwtYI&list=PLesCEcYj003QxPQ4vTXkt22-E11aQvoVj"
+                                           class="btn fundo-principal mt-3 mb-0 cor-composto-laranja btn-block">
+                                            eXcript - Curso de Python
+                                        </a>
+                                        Ótimo conteúdo, aulas bem didáticas que abordam a maior parte da matéria cobrado no curso.
+                                    </p>
+                                    <p>
+                                        <a target="_blank" href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6"
+                                           class="btn fundo-principal mt-3 mb-0 cor-composto-laranja btn-block">
+                                            Curso Em Vídeo - Python - Mundo 1: Fundamentos
+                                        </a>
+										<a target="_blank" href="https://www.youtube.com/watch?v=nJkVHusJp6E&list=PLHz_AreHm4dk_nZHmxxf_J0WRAqy5Czye&pbjreload=10"
+                                           class="btn fundo-principal mt-3 mb-0 cor-composto-laranja btn-block">
+                                            Curso Em Vídeo - Python - Mundo 2: Estruturas de Controle
+                                        </a>
+                                        Um dos canais de estudo mais conhecidos do YouTube, o curso de Python começou do ano de 2017, e está divido em duas parte, Mundo 1: Fundamentos, e Mundo 2: Estruturas de Controle.
+										O Curso tem uma ótima abordagem do conteúdo, e com aquela didatica que todos conhecem,também tem muitos exercícios para fixar os comandos. Porém, como o curso é para iniciantes, o material se torna um pouco
+										básico se for comparado com o curso de Fundamentos de Programação do Cederj, mas mesmo assim é um ótimo meio de aprendizado.
+
+                                    </p>
+									
+									 <p>
+                                        <a target="_blank" href="https://www.urionlinejudge.com.br/judge/en/login"
+                                           class="btn fundo-principal mt-3 mb-0 cor-composto-laranja btn-block">
+                                            Uri Online Judge
+                                        </a>
+                                        O URI Online Judge é um projeto que está sendo desenvolvido pelo Departamento de Ciência da Computação da URI University. 
+										O principal objetivo do projeto é fornecer práticas de programação e compartilhamento de conhecimento,o site
+										contém mais de 1.000 problemas divididos em 8 grandes categorias. Esta divisão ajuda os usuários a se concentrar em tópicos
+										específicos de programação. Todos os problemas estão disponíveis em português e inglês.
+                                    </p>
+								
+								
+								
+								
+								
+								</div>
                             </div>  <!-- card body -->
                         </div>  <!-- card collapse-->
                     </div>  <!-- card - Fundamentos de Programação -->
@@ -1580,7 +1646,7 @@
                         <div class="card-header" role="tab" id="cabecalhoIngles">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseIngles" role="button" aria-expanded="true"
-                                   aria-controls="collapseIngles">
+                                   aria-controls="collapseIngles" class="card-disciplina">
                                     Inglês Instrumental
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTNHRCOXdqblZWYjA">
@@ -1601,7 +1667,7 @@
                         <div class="card-header" role="tab" id="cabecalhoIaI">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseIaI" role="button" aria-expanded="true"
-                                   aria-controls="collapseIaI">
+                                   aria-controls="collapseIaI" class="card-disciplina">
                                     Introdução à Informática
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTOWdZNHNVdXAzTzQ">
@@ -1745,51 +1811,112 @@
                              data-parent="#disciplinasLtoZ">
                             <div class="card-body">
                                 <h4>Ementa</h4>
-                                <div class="mb-1">
+                                <div class="">
                                     Funções: limites, continuidade de funções de uma variável. Derivação: conceito,
                                     propriedades, interpretação e representação geométrica, o teorema do valor médio,
                                     máximos e mínimos. Integração: conceito, propriedades, cálculo de áreas e de
                                     volumes.; teorema fundamentaldo cálculo; logaritmo e exponencial; regra de
                                     L’hopital; aplicações.
                                 </div>
-                                <h4>Aulas</h4>
+                                <h4 class="mt-3">Aulas</h4>
                                 <div class="row centralizado mb-3" role="toolbar" aria-label="Link para as aulas">
-                                   <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_001/Aula_001.xml"
+                                    <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_001/Aula_001.xml"
                                        class="btn btn-primary m-1" target="_blank">
                                         01
                                     </a>
-                                   <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_002/Aula_002.xml"
+                                    <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_002/Aula_002.xml"
                                        class="btn btn-primary m-1" target="_blank">
                                         02
                                     </a>
-                                   <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_003/Aula_003.xml"
+                                    <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_003/Aula_003.xml"
                                        class="btn btn-primary  m-1" target="_blank">
                                         03
                                     </a>
-                                   <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_004/Aula_004.xml"
+                                    <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_004/Aula_004.xml"
                                        class="btn btn-primary  m-1" target="_blank">
                                         04
                                     </a>
-                                   <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_005/Aula_005.xml"
+                                    <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_005/Aula_005.xml"
                                        class="btn btn-primary  m-1" target="_blank">
                                         05
                                     </a>
-                                   <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_006/Aula_006.xml"
+                                    <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_006/Aula_006.xml"
                                        class="btn btn-primary  m-1" target="_blank">
                                         06
                                     </a>
-                                   <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_007/Aula_007.xml"
+                                    <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_007/Aula_007.xml"
                                        class="btn btn-primary  m-1" target="_blank">
                                         07
                                     </a>
-                                   <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_008/Aula_008.xml"
+                                    <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_008/Aula_008.xml"
                                        class="btn btn-primary  m-1" target="_blank">
                                         08
                                     </a>
-                                   <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_009/Aula_009.xml"
+                                    <a href="http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead05008/Aula_009/Aula_009.xml"
                                        class="btn btn-primary  m-1" target="_blank">
                                         09
                                     </a>
+                                </div>
+                                <h4 class="mt-3">Dicas</h4>
+                                <div class="row centralizado" role="toolbar" aria-label="Dicas">
+                                    <div class="dicas">
+                                    <p>
+                                        As aulas gravadas do curso são ruins. Buscar material externo para aprender é o
+                                        ideal. Estude também pelo livro texto e faça as provas antigas. O portal Teca
+                                        tem ótimos livros que podem ajudar no seu aprendizado, ou se preferir leia as
+										transparências ao invés de ver as vídeo aulas. Ambos estão disponíveis no Drive.
+                                    </p>
+                                    <p>
+                                        <a target="_blank" href="https://www.symbolab.com/" class="btn fundo-principal mt-3 mb-0 cor-composto-laranja btn-block">
+                                            Symbolab Math Solver - Step by Step calculator
+                                        </a>
+                                        Com esse site você consegue conseguir uma boa nota nas ADs. Além de calcular o resultado 
+										das questões propostas, esse site também fornece o desenvolvimento das questões. Aproveite
+										e estude com ele. Aprenda passo a passo de como resolver questões de Limite, Derivada, Logaritmo e Integrais etc.
+                                    </p>
+                                    <p>
+                                        <a target="_blank" href="https://www.youtube.com/watch?v=DkCHV5Kbx4o&list=PLTPg64KdGgYhACfQUtMf3CuhWOfLoTf_a"
+                                           class="btn fundo-principal mt-3 mb-0 cor-composto-laranja btn-block">
+											Ferretto Matemática – Calculo 1
+		
+                                        </a>
+                                        Nessa playlist contém um dos melhores conteúdos de matemática para universitários da web.
+										O material é muito bem elaborado, ótima didática, com um grande variedade de exercícios para a fixação da matéria.
+										A playlist tem todo conteúdo principal da primeira parte da disciplina, que consiste em Limite, Continuidades e Derivadas.
+
+                                    </p>
+                                    <p>
+                                        <a target="_blank" href="https://www.youtube.com/watch?v=CdEUV9mcEJ8&list=PLD785E767CD25501A"
+                                           class="btn fundo-principal mt-3 mb-0 cor-composto-laranja btn-block">
+                                            Fernando Grings, omatemático: Integral
+                                        </a>
+                                        O melhor conteúdo de matemática da web, exercícios variados, ótima didática. Aborda a maior 
+										parte da materia do curso. 
+										Principais conteúdos cobrados na segunda prova: Integrais, Derivada Regra de L’Hospital, Volume e Aréa. 
+										O canal tem playlists para todas essas matérias.
+
+                                    </p>
+                                </div>
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
                                 </div>
                             </div>
                         </div>
@@ -1921,7 +2048,7 @@
                         <div class="card-header" role="tab" id="cabecalhoOC">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseOC" role="button" aria-expanded="true"
-                                   aria-controls="collapseOC">
+                                   aria-controls="collapseOC" class="card-disciplina" >
                                     Organização de Computadores
                                 </a>
                                 <a target="_blank" href="https://drive.google.com/open?id=0B09LpkQ_E4zTenpwbmZUd3h4d28">
@@ -2154,6 +2281,49 @@
                                        class="btn btn-primary  m-1" target="_blank">
                                         13
                                     </a>
+									
+									</div>
+									<h4>Dicas</h4>
+                                <div class="dicas">
+                                    <p>
+                                       As aulas gravadas são atuais, porém são muito superficiais se forem
+									   comparadas com as avaliações da disciplina. Não se acomode com as aulas da plataforma,
+									   busque conteúdos externos. 
+									   Não deixe as ADs para a última hora, pois as avaliações são muito extensa, cada ponto é primordial 
+									   para sua aprovação. É importante que o aluno treine a escrita dos códigos no papel, todas as 
+									   provas serão discursivas na folha, ou seja, sem o auxílio da IDE.
+									   Livros como "Python Para Desenvolvedores", "Use A Cabeça! - Python" e "Introdução a Python Modulo B e C" 
+									   podem ser uma ótima sugestão para o entendimento da linguagem.
+									   
+
+                                    </p>
+                                    <p>
+                                        <a target="_blank" href="https://www.youtube.com/watch?v=qWpGxnMtog4&list=PLx1JnO_GJin2E5L2ZB18Iq2pD2lyf2x6y" 
+										class="btn fundo-principal mt-3 mb-0 cor-composto-laranja btn-block">
+                                            Ignorância Zero 
+                                        </a>
+                                        Com toda certeza, nesse site você encontra o melhor conteúdo de python da web, o material
+										é muito bem elaborado com a auxilio do livro "Introdução a Python Modulo B e C", que é bastante recomendado para iniciantes.
+										Na playlist fica o conteúdo completo para o estudo da disciplina no curso.
+
+                                    </p>
+                                    <p>
+                                        <a target="_blank" href="https://www.youtube.com/watch?v=kSQDp20eeqE&list=PLesCEcYj003ShHnUT83gQEH6KtG8uysUE"
+                                           class="btn fundo-principal mt-3 mb-0 cor-composto-laranja btn-block">
+                                            eXcript tkinter
+                                        </a>
+                                        Ótimo conteúdo, aulas bem didáticas que aborda a maior parte da materia cobrado no curso, essa playlist de tkinter vai
+										ajudar muito na segunda parte da matéria que ensina interfaces gráficas.
+                                    </p>
+                                    <p>
+                                        <a target="_blank" href="https://www.youtube.com/watch?v=qbFTc5EAuZ0&index=9&list=PLp95aw034Wn_WtEmlepaDrw8FU8R5azcm"
+                                           class="btn fundo-principal mt-3 mb-0 cor-composto-laranja btn-block">
+										   CaveiraTech - Python Orientado a Objeto - Python Básico Solyd
+
+                                        </a>
+                                        O canal consiste em somente uma aula de POO(Programação Orientada a Objetos) que aborda alguns de seus principais conceitos como, classes, objetos, herança,
+										sobreposição, sobrecarga, atributos e métodos, que são conhecimentos primordiais para programar em Orientação a Objetos.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -2322,6 +2492,29 @@
                                        class="btn btn-primary  m-1" target="_blank">
                                         13
                                     </a>
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
                                 </div>
                             </div>
                         </div>
@@ -3124,7 +3317,7 @@
 <script src="js/contact_me.js"></script>
 
 <!-- Custom scripts for this template -->
-<script src="js/freelancer.min.js"></script>
+<script src="js/freelancer.js"></script>
 
 </body>
 

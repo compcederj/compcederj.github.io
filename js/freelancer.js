@@ -3,7 +3,7 @@
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
@@ -72,24 +72,16 @@
         });
     });
 
+  // Ao clicar em uma disciplina, evita que ela fique fora da tela.
     $('a.card-disciplina').on('click', function (event) {
+      event.preventDefault();
+      var element = this.parentElement.parentElement.parentElement;
         setTimeout( function () {
-
-            event.preventDefault();
-            var element = this.parentElement.parentElement.parentElement;
             $('html, body').animate({
                 scrollTop: $(element).offset().top - 90
             }, 500, function () {
             })
-        }, 3000);
-        if (this.hash !== "") {
-            // event.preventDefault();
-            // var element = this.parentElement.parentElement.parentElement;
-            // $('html, body').animate({
-            //     scrollTop: $(element).offset().top - 90
-            // }, 500, function () {
-            // })
-        }
+        }, 300);
     });
 
 })(jQuery); // End of use strict
