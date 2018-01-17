@@ -75,13 +75,54 @@
   // Ao clicar em uma disciplina, evita que ela fique fora da tela.
     $('a.card-disciplina').on('click', function (event) {
       event.preventDefault();
-      var element = this.parentElement.parentElement.parentElement;
+      var element = this.parentElement.parentElement.parentElement,
+          alvo = $(this).data('alvo');
+      // console.log($(alvo).html());
+      if ($(alvo).html() === "") {
+          var quantidadeDeAulas = $(this).data('quantidade'),
+              disciplina = $(this).data('disciplina'),
+              conteudoHTML = "<h4 class=\"mt-3 w-100\" >Aulas</h4>";
+          for (var i = 1; i <= quantidadeDeAulas; i++) {
+              var aula = (i < 10 ? "00" + i.toString() : (i < 100 ? "0" + i.toString() : i.toString()));
+              conteudoHTML += "<a href=\"http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/";
+              conteudoHTML += disciplina;
+              conteudoHTML += "/Aula_";
+              conteudoHTML += aula;
+              conteudoHTML += "/Aula_";
+              conteudoHTML += aula;
+              conteudoHTML += ".xml\" class=\"btn btn-primary m-1\" target=\"_blank\">";
+              conteudoHTML += aula.slice(1);
+              conteudoHTML += "</a>";
+          }
+          $(alvo).html(conteudoHTML);
+      }
         setTimeout( function () {
             $('html, body').animate({
                 scrollTop: $(element).offset().top - 90
-            }, 500, function () {
+            }, 800, function () {
             })
         }, 300);
     });
+  
+  // Ao clicar em uma disciplina escreve insere as aulas no conteúdo do HTML
+  // $('a.card-disciplina').click('click', function () {
+  //   var alvo = $(this).data('alvo'),
+  //       quantidadeDeAulas = $(this).data('quantidade'),
+  //       disciplina = $(this).data('disciplina'),
+  //       conteudoHTML = "<h4 class=\"mt-3 w-100\" >Aulas</h4>";
+  //   for (var i = 1; i <= quantidadeDeAulas; i++) {
+  //     var aula = (i < 10 ? "00" + i.toString() : (i < 100 ? "0" + i.toString() : i.toString()));
+  //     conteudoHTML += "<a href=\"http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/";
+  //     conteudoHTML += disciplina;
+  //     conteudoHTML += "/Aula_";
+  //     conteudoHTML += aula;
+  //     conteudoHTML += "/Aula_";
+  //     conteudoHTML += aula;
+  //     conteudoHTML += ".xml\" class=\"btn btn-primary m-1\" target=\"_blank\">";
+  //     conteudoHTML += aula;
+  //     conteudoHTML += "</a>";
+  //   }
+  //   $(alvo).html(conteudoHTML);
+  // });
 
 })(jQuery); // End of use strict
