@@ -88,7 +88,7 @@
         conteudoHTML += aula;
         conteudoHTML += "/Aula_";
         conteudoHTML += aula;
-        conteudoHTML += ".xml\" class=\"btn btn-primary m-1\" target=\"_blank\">";
+        conteudoHTML += ".xml\" class=\"btn cor-composto-laranja fundo-principal m-1\" target=\"_blank\">";
         conteudoHTML += aula.slice(1);
         conteudoHTML += "</a>";
       }
