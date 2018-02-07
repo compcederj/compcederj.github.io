@@ -1,109 +1,112 @@
 (function ($) {
-    "use strict"; // Start of use strict
+  "use strict"; // Start of use strict
 
-    // Smooth scrolling using jQuery easing
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: (target.offset().top - 70)
-                }, 800, "easeInOutExpo");
-                return false;
-            }
-        }
-    });
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 70)
+        }, 800, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
 
-    // Scroll to top button appear
-    $(document).scroll(function () {
-        var scrollDistance = $(this).scrollTop();
-        if (scrollDistance > 100) {
-            $('.scroll-to-top').fadeIn();
-        } else {
-            $('.scroll-to-top').fadeOut();
-        }
-    });
+  // Scroll to top button appear
+  $(document).scroll(function () {
+    var scrollDistance = $(this).scrollTop();
+    if (scrollDistance > 100) {
+      $('.scroll-to-top').fadeIn();
+    } else {
+      $('.scroll-to-top').fadeOut();
+    }
+  });
 
-    // Closes responsive menu when a scroll trigger link is clicked
-    $('.js-scroll-trigger').click(function () {
-        $('.navbar-collapse').collapse('hide');
-    });
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(function () {
+    $('.navbar-collapse').collapse('hide');
+  });
 
-    // Activate scrollspy to add active class to navbar items on scroll
-    $('body').scrollspy({
-        target: '#mainNav',
-        offset: 80
-    });
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
+    target: '#mainNav',
+    offset: 80
+  });
 
-    // Collapse Navbar
-    var navbarCollapse = function () {
-        if ($("#mainNav").offset().top > 100) {
-            $("#mainNav").addClass("navbar-shrink");
-        } else {
-            $("#mainNav").removeClass("navbar-shrink");
-        }
-    };
-    // Collapse now if page is not at top
-    navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);
+  // Collapse Navbar
+  var navbarCollapse = function () {
+    if ($("#mainNav").offset().top > 100) {
+      $("#mainNav").addClass("navbar-shrink");
+    } else {
+      $("#mainNav").removeClass("navbar-shrink");
+    }
+  };
+  // Collapse now if page is not at top
+  navbarCollapse();
+  // Collapse the navbar when page is scrolled
+  $(window).scroll(navbarCollapse);
 
-    // Modal popup$(function () {
-    $('.portfolio-item').magnificPopup({
-        type: 'inline',
-        preloader: false,
-        focus: '#username',
-        modal: true
-    });
-    $(document).on('click', '.portfolio-modal-dismiss', function (e) {
-        e.preventDefault();
-        $.magnificPopup.close();
-    });
+  // Modal popup$(function () {
+  $('.portfolio-item').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    focus: '#username',
+    modal: true
+  });
+  $(document).on('click', '.portfolio-modal-dismiss', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
 
-    // Floating label headings for the contact form
-    $(function () {
-        $("body").on("input propertychange", ".floating-label-form-group", function (e) {
-            $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-        }).on("focus", ".floating-label-form-group", function () {
-            $(this).addClass("floating-label-form-group-with-focus");
-        }).on("blur", ".floating-label-form-group", function () {
-            $(this).removeClass("floating-label-form-group-with-focus");
-        });
+  // Floating label headings for the contact form
+  $(function () {
+    $("body").on("input propertychange", ".floating-label-form-group", function (e) {
+      $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
+    }).on("focus", ".floating-label-form-group", function () {
+      $(this).addClass("floating-label-form-group-with-focus");
+    }).on("blur", ".floating-label-form-group", function () {
+      $(this).removeClass("floating-label-form-group-with-focus");
     });
+  });
 
   // Ao clicar em uma disciplina, evita que ela fique fora da tela.
-    $('a.card-disciplina').on('click', function (event) {
-      event.preventDefault();
-      var element = this.parentElement.parentElement.parentElement,
-          alvo = $(this).data('alvo');
-      // console.log($(alvo).html());
-      if ($(alvo).html() === "") {
-          var quantidadeDeAulas = $(this).data('quantidade'),
-              disciplina = $(this).data('disciplina'),
-              conteudoHTML = "<h4 class=\"mt-3 w-100\" >Aulas</h4>";
-          for (var i = 1; i <= quantidadeDeAulas; i++) {
-              var aula = (i < 10 ? "00" + i.toString() : (i < 100 ? "0" + i.toString() : i.toString()));
-              conteudoHTML += "<a href=\"http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/";
-              conteudoHTML += disciplina;
-              conteudoHTML += "/Aula_";
-              conteudoHTML += aula;
-              conteudoHTML += "/Aula_";
-              conteudoHTML += aula;
-              conteudoHTML += ".xml\" class=\"btn btn-primary m-1\" target=\"_blank\">";
-              conteudoHTML += aula.slice(1);
-              conteudoHTML += "</a>";
-          }
-          $(alvo).html(conteudoHTML);
+  $('a.aulas-disciplina').on('click', function (event) {
+    event.preventDefault();
+    var alvo = $(this).data('alvo');
+    if ($(alvo).html() === "") {
+      var quantidadeDeAulas = $(this).data('quantidade'),
+        disciplina = $(this).data('disciplina'),
+        conteudoHTML = "<h4 class=\"mt-3 w-100\" >Aulas</h4>";
+      for (var i = 1; i <= quantidadeDeAulas; i++) {
+        var aula = (i < 10 ? "00" + i.toString() : (i < 100 ? "0" + i.toString() : i.toString()));
+        conteudoHTML += "<a href=\"http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/";
+        conteudoHTML += disciplina;
+        conteudoHTML += "/Aula_";
+        conteudoHTML += aula;
+        conteudoHTML += "/Aula_";
+        conteudoHTML += aula;
+        conteudoHTML += ".xml\" class=\"btn btn-primary m-1\" target=\"_blank\">";
+        conteudoHTML += aula.slice(1);
+        conteudoHTML += "</a>";
       }
-        setTimeout( function () {
-            $('html, body').animate({
-                scrollTop: $(element).offset().top - 90
-            }, 800, function () {
-            })
-        }, 300);
-    });
-  
+      $(alvo).html(conteudoHTML);
+    }
+//    $('html, body').animate({
+//      scrollTop: $(alvo).offset().top - 90
+//    }, 800);
+//      $('html, body').animate({
+//        scrollTop: $(alvo).parent().offset().top - 90
+//      }, 800, function () {})
+    setTimeout(function () {
+      $('html, body').animate({
+        scrollTop: $(alvo).parent().offset().top - 90
+      }, 800, function () {})
+    }, 0);
+  });
+
   // Ao clicar em uma disciplina escreve insere as aulas no conteúdo do HTML
   // $('a.card-disciplina').click('click', function () {
   //   var alvo = $(this).data('alvo'),
