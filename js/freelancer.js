@@ -94,38 +94,11 @@
       }
       $(alvo).html(conteudoHTML);
     }
-//    $('html, body').animate({
-//      scrollTop: $(alvo).offset().top - 90
-//    }, 800);
-//      $('html, body').animate({
-//        scrollTop: $(alvo).parent().offset().top - 90
-//      }, 800, function () {})
     setTimeout(function () {
       $('html, body').animate({
-        scrollTop: $(alvo).parent().offset().top - 90
+        scrollTop: $(alvo).parent().offset().top - $('#mainNav').outerHeight()
       }, 800, function () {})
     }, 0);
   });
-
-  // Ao clicar em uma disciplina escreve insere as aulas no conteúdo do HTML
-  // $('a.card-disciplina').click('click', function () {
-  //   var alvo = $(this).data('alvo'),
-  //       quantidadeDeAulas = $(this).data('quantidade'),
-  //       disciplina = $(this).data('disciplina'),
-  //       conteudoHTML = "<h4 class=\"mt-3 w-100\" >Aulas</h4>";
-  //   for (var i = 1; i <= quantidadeDeAulas; i++) {
-  //     var aula = (i < 10 ? "00" + i.toString() : (i < 100 ? "0" + i.toString() : i.toString()));
-  //     conteudoHTML += "<a href=\"http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/";
-  //     conteudoHTML += disciplina;
-  //     conteudoHTML += "/Aula_";
-  //     conteudoHTML += aula;
-  //     conteudoHTML += "/Aula_";
-  //     conteudoHTML += aula;
-  //     conteudoHTML += ".xml\" class=\"btn btn-primary m-1\" target=\"_blank\">";
-  //     conteudoHTML += aula;
-  //     conteudoHTML += "</a>";
-  //   }
-  //   $(alvo).html(conteudoHTML);
-  // });
 
 })(jQuery); // End of use strict
