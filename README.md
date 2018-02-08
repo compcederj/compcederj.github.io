@@ -1,4 +1,4 @@
-# Sala de Estudos do CompCEDER
+# Sala de Estudos do CompCEDERJ
 
 O template deste site é feito pensando em mobile first. Ou seja, ele é desenhado primeiramente para funcionar adequadamente no celular e adaptado para desktop. Sendo assim é uma página completamente responsiva.
 
