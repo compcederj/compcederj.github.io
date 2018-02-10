@@ -57,7 +57,7 @@
     return regeneratorRuntime.wrap(function (n) {
       for (;;) switch (n.prev = n.next) {
         case 0:
-          return n.next = 2, t("sua_hash_aqui");
+          return n.next = 2, t("qz3gu6mdyvfqszm6x6wgawjlqakauh0kd5yyytr2hc");
         case 2:
           return r = n.sent, n.next = 5, r.start();
         case 5:
