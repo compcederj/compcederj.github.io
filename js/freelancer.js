@@ -76,6 +76,7 @@
   $('a.aulas-disciplina').on('click', function (event) {
     event.preventDefault();
     var alvo = $(this).data('alvo') !== undefined ? $(this).data('alvo') : $(this).attr('href');
+    console.log('alvo: '+$(this).data('alvo')+' href: '+$(this).attr('href'));
     if ($(alvo).html() === "") {
       var quantidadeDeAulas = $(this).data('quantidade'),
         disciplina = $(this).data('disciplina'),
