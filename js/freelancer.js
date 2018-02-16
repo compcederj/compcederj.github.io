@@ -75,7 +75,7 @@
   // Ao clicar em uma disciplina, evita que ela fique fora da tela.
   $('a.aulas-disciplina').on('click', function (event) {
     event.preventDefault();
-    var alvo = $(this).data('alvo');
+    var alvo = $(this).data('alvo') !== undefined ? $(this).data('alvo') : $(this).attr('href');
     if ($(alvo).html() === "") {
       var quantidadeDeAulas = $(this).data('quantidade'),
         disciplina = $(this).data('disciplina'),
