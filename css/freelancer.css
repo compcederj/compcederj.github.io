@@ -164,7 +164,7 @@ section h2 {
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active,
 #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: var(--pink);
+  /*color: var(--pink);*/
   text-shadow: 2px 2px 3px #1C234A
 }
 
