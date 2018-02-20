@@ -465,6 +465,10 @@ form .row:first-child .floating-label-form-group {
   background-size: cover;
 }
 
+.img-circle {
+  border-radius: 100%;
+}
+
 /*background-color: #18BC9C !important; }*/
 
 .bg-secondary {
