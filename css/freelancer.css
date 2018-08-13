@@ -879,3 +879,8 @@ form .row:first-child .floating-label-form-group {
 .fundo-sombra4 {
   background: #5065D7;
 }
+
+/* Bordas */
+.borda-inferior {
+  border-bottom: 1px solid
+}
