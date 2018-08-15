@@ -879,3 +879,13 @@ form .row:first-child .floating-label-form-group {
 .fundo-sombra4 {
   background: #5065D7;
 }
+
+/* Bordas e Margens */
+.borda-inferior {
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+}
+
+.oportunidade {
+  padding-top: 15px;
+}
