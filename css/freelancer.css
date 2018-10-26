@@ -886,6 +886,11 @@ form .row:first-child .floating-label-form-group {
   padding-bottom: 15px;
 }
 
+.borda-superior {
+  border-top: 1px solid gray;
+  padding-top: 15px;
+}
+
 .oportunidade {
   padding-top: 15px;
 }
